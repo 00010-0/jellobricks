@@ -375,15 +375,6 @@ body{
 #legal{color:rgba(255,238,214,.8)}
 .back-hint{color:rgba(255,238,214,.9)}
 .back-hint:hover{color:#ffd95c}
-.panel-inner{
-  background:rgba(255,252,246,.95);
-  border-radius:26px;padding:32px 32px 26px;
-  box-shadow:0 30px 80px rgba(90,25,5,.3), inset 0 1px 0 rgba(255,255,255,.85);
-  -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);
-}
-@media(max-width:640px){
-  .panel-inner{padding:24px 20px 20px}
-}
 
 /* ============ MENU: INTEGRADO EN EL FONDO (sin tarjeta) ============ */
 #view-menu .panel-inner{
@@ -419,6 +410,35 @@ body{
   #view-menu .m-item{padding:13px 8px}
   #view-menu .m-item:hover{padding-left:12px}
 }
+
+/* ============ CONTACTO: MISMO ESTILO QUE EL MENÚ ============ */
+#view-contact .panel-inner{
+  background:transparent;border:none;border-radius:0;box-shadow:none;
+  padding:10px 8px;
+}
+#view-contact h2{
+  font-family:'Inter',sans-serif;font-weight:700;letter-spacing:-.6px;
+  font-size:clamp(1.8rem,4.5vw,2.5rem);
+}
+#view-contact h2 em{font-style:normal;color:var(--gold)}
+#view-contact .sub{font-size:.82rem;color:rgba(60,60,67,.65);margin-bottom:24px}
+#view-contact .c-line{color:rgba(70,45,25,.85)}
+#view-contact .socials a{
+  background:rgba(255,255,255,.55);
+  border-color:rgba(107,36,16,.22);
+  -webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);
+}
+#view-contact .socials a:hover{border-color:var(--gold);background:rgba(255,255,255,.85)}
+#view-contact input,#view-contact textarea,#view-contact select{
+  background:rgba(255,255,255,.6);
+  border:1px solid rgba(107,36,16,.22);
+  -webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);
+}
+#view-contact input:focus,#view-contact textarea:focus{
+  background:rgba(255,255,255,.9);border-color:var(--gold);
+}
+#view-contact input::placeholder,#view-contact textarea::placeholder{color:rgba(70,45,25,.5)}
+#view-contact #formMsg{color:#8a5a00}
 </style>
 </head>
 <body>
